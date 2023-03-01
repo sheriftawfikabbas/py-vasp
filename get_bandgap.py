@@ -1,9 +1,9 @@
 import numpy as np
 
 if __name__ == "__main__":
-    feigenval = open('example/EIGENVAL', 'r')
+    feigenval = open('EIGENVAL', 'r')
     eigenval = feigenval.readlines()
-    fdoscar = open('example/DOSCAR', 'r')
+    fdoscar = open('DOSCAR', 'r')
     doscar = fdoscar.readlines()
     fermi = float(doscar[5].split()[3])
     info = eigenval[5].split()

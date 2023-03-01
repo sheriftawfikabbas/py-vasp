@@ -2,10 +2,10 @@ import numpy as np
 TAG = 'TOTAL-FORCE (eV/Angst)'
 
 if __name__ == "__main__":
-    outcarf = open('example/OUTCAR', 'r')
+    outcarf = open('OUTCAR', 'r')
     outcar = outcarf.readlines()
     outcarf.close()
-    poscarf = open('example/POSCAR', 'r')
+    poscarf = open('POSCAR', 'r')
     poscar = poscarf.readlines()
     poscarf.close()
     num_atoms = sum([int(x) for x in poscar[6].split()])
